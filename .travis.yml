@@ -1,0 +1,14 @@
+os: linux
+dist: xenial
+language: elixir
+elixir: 1.8
+
+branches:
+  only:
+    - master
+
+install:
+  - echo pass install
+
+script:
+  - elixir 01-hello-world.exs
