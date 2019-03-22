@@ -12,3 +12,4 @@ install:
 
 script:
   - elixir 01-hello-world.exs
+  - elixir 02-functions.exs
