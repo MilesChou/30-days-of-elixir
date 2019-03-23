@@ -13,3 +13,4 @@ install:
 script:
   - elixir 01-hello-world.exs
   - elixir 02-functions.exs
+  - elixir 03-functions-pattern-matches.exs
