@@ -26,7 +26,10 @@ case {1, 2, 3} do
   # 因 x 值被固定在 10，所以這個比對不到
   {1, ^x, y} -> IO.puts x + y
 
-  # 會比對到這個
+  # 使用 when 子句，會比對到這個
+  {1, x, 3} when x > 0 -> IO.puts x
+
+  # 預設比對
   _ -> IO.puts "Nothing match"
 end
 
@@ -41,8 +44,4 @@ cond do
   1 + 1 == 2 ->
     # 會出現這個
     IO.puts "But this will"
-end
-
-cond do
-  false -> IO.puts "Nothing match"
 end
